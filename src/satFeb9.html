@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feb9 practice assignment</title>
+    <style>
+        :root {
+            font-family: Arial, Helvetica, sans-serif;
+            ;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+
+        /*------------------------------------------*/
+        p {
+            font-size: 24px;
+
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        nav.topnav {
+            display: flex;
+            border-bottom: 2px solid lightgrey;
+            overflow: hidden;
+
+        }
+
+        ul.topleft,
+        ul.topright {
+            margin-top: -5px;
+            margin-bottom: -5px;
+        }
+
+        ul.topleft,
+        ul.topleft>li,
+        ul.topleft>li>h3 {
+            margin-top: -2px;
+            display: inline;
+            flex: 1;
+            padding: 8px;
+            font-size: 20px;
+        }
+
+        ul.topleft>li:nth-child(2),
+        li:nth-child(3) {
+            color: orange;
+        }
+
+        ul.topleft>li:nth-child(2) {
+            margin-left: -1px;
+        }
+
+        ul.topright,
+        ul.topright>li {
+            float: right;
+            display: inline;
+            flex: 1;
+            padding: 8px;
+            color: orange;
+            font-size: 20px;
+
+        }
+
+        /*------------------------------------------*/
+
+
+        /*------------------------------------------*/
+        main>div.main {
+            margin-left: 7%;
+            margin-right: 7%;
+        }
+
+        div.top>img {
+            float: left;
+
+            width: 560px;
+            height: 330px;
+            border-radius: 15px;
+            margin-right: 15px;
+            margin-bottom: 14px;
+            margin-top: 15px;
+            margin-left: 15px;
+            border: 2px solid grey;
+        }
+
+        div.middle {
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            align-items: center;
+            margin-top: -40px;
+            margin-bottom: -30px;
+        }
+
+        div.middle>p {
+            background-color: black;
+            justify-content: center;
+            color: white;
+            height: 350px;
+            width: 350px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60px;
+        }
+
+        div.bottom {
+            display: flex;
+            border: none;
+            color: white;
+
+        }
+
+        div.bottom>p.bottom:nth-child(2) {
+            background-color: black;
+            width: 50%;
+            padding: 15px;
+        }
+
+        div.bottom>p.bottom:nth-child(1),
+        p.bottom:nth-child(3) {
+            background-color: grey;
+            width: 25%;
+            padding: 15px;
+        }
+
+        span.coloredtext {
+            color: rgb(233, 108, 129);
+        }
+
+        /*------------------------------------------*/
+
+
+        /*------------------------------------------*/
+        nav.bottomnav {
+            display: flex;
+            border-top: 2px solid lightgrey;
+            overflow: hidden;
+            display: flex;
+            margin-bottom: -10px;
+        }
+
+        ul.bottomleft,
+        ul.bottomleft>li {
+            margin-top: 5px;
+            margin-left: -10px;
+            padding-top: 10px;
+            display: inline;
+            flex: 1;
+            font-size: 20px;
+
+        }
+
+        ul.bottomright,
+        ul.bottomright>li {
+            margin-top: 4px;
+            padding-top: 4px;
+            flex: 1;
+            display: inline;
+            float: right;
+            font-size: 20px;
+            margin-right: 5px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parentcontainer">
+
+        <header>
+            <nav class="topnav">
+                <ul class="topleft">
+                    <li>
+                        <h3><b>Floated menus:</b></h3>
+                    </li>
+                    <li>One</li>
+                    <li>Two</li>
+                </ul>
+                <ul class="topright">
+                    <li>Four</li>
+                    <li>Three</li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="main">
+                <h1><span class="coloredtext">&lt;Article 1&gt;:</span> Wrapping text around an image</h1>
+                <div class="top">
+                    <img src="https://images.unsplash.com/photo-1601711635481-b2c394118b53?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGNpdHl8ZW58MHx8MHx8fDA%3D"
+                        alt="">
+                    <h1>A secondary heading</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem est eaque perferendis aperiam
+                        similique recusandae, dolores velit doloremque beatae, suscipit obcaecati, in nesciunt nemo
+                        tempore provident. Reiciendis eveniet tempore quibusdam. Lorem ipsum dolor, sit amet
+                        consectetur adipisicing elit. Eos odio sed culpa qui consectetur placeat aut quidem numquam.
+                        Veniam similique saepe porro repudiandae maxime illum perferendis debitis assumenda
+                        obcaecati a! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam dolore
+                        consectetur maiores dignissimos minus. Autem, sequi aliquid! Qui, ullam nesciunt
+                        exercitationem quibusdam, dolores, hic numquam a sequi esse expedita repudiandae.Lorem
+                        ipsum dolor sit amet, consectetur adipisicing elit. Saepe eveniet totam beatae deleniti
+                        neque quidem possimus reprehenderit quaerat, dicta nisi corrupti animi ipsam. Assumenda,
+                        temporibus quisquam cupiditate quia dicta eos. Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Cumque repudiandae laudantium voluptates ab minima consequuntur et
+                        exercitationem, cupiditate tempora odio, reiciendis ad excepturi accusantium, ex praesentium
+                        aperiam quam esse commodi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+                        voluptate numquam quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. At vitae
+                        quidem cupiditate ea libero architecto ab quo, fuga ratione quod.</p>
+                </div>
+                <h1><span class="coloredtext">&lt;Article 2&gt;:</span> Centering text vertically</h1>
+                <div class="middle">
+                    <p>Selectors</p>
+                    <p>Inheritance</p>
+                    <p>Cascade</p>
+                    <p>Specificity</p>
+                </div>
+                <h1><span class="coloredtext">&lt;Article 3&gt;:</span> Equal-height columns</h1>
+                <div class="bottom">
+                    <p class="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis doloribus velit,
+                        quod a quibusdam
+                        libero eligendi distinctio error commodi praesentium impedit modi perferendis magni quasi
+                        dignissimos cumque possimus sunt inventore?</p>
+                    <p class="bottom">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque autem veniam
+                        provident error
+                        vitae! Corporis quia temporibus sint quaerat doloribus assumenda sapiente unde ipsa architecto
+                        blanditiis libero, voluptates repudiandae ad! Lorem ipsum, dolor sit amet consectetur
+                        adipisicing elit. Molestiae maiores quas a eaque ipsum quisquam officia fuga unde veniam iusto
+                        rerum architecto nostrum fugiat dignissimos, optio asperiores illum repellat. Optio. Lorem
+                        ipsum, dolor sit amet consectetur adipisicing elit. Tenetur iure natus fugiat error rem soluta
+                        quia praesentium dignissimos. Ea blanditiis expedita laboriosam quasi modi illum accusantium
+                        adipisci dolorum iusto perferendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Aliquam, minus! Aperiam veniam accusantium numquam illo itaque fugit, excepturi porro rem,
+                        facilis, perferendis dolores non magnam? Id corporis sapiente magnam laudantium.</p>
+                    <p class="bottom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quis ullam
+                        similique voluptate
+                        velit laboriosam, voluptates, aliquid distinctio ea explicabo maxime nisi incidunt id. Adipisci
+                        accusamus nulla reprehenderit inventore ea?</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <nav class="bottomnav">
+                <ul class="bottomleft">
+                    <li><b>UMANG GUPTA</b></li>
+                </ul>
+                <ul class="bottomright">
+                    <li>&copy; All rights reserved</li>
+                </ul>
+
+            </nav>
+        </footer>
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+
+</html>

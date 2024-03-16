@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*{
+   box-sizing: border-box;
+}
+
+ /* ------------------------------------------- */
+header > .topnav{
+    background-color: rgb(222, 221, 221);
+    margin: -16px -15px -16px -15px;
+    
+    justify-content: space-between;
+    display: flex;
+    padding: 7px;
+    border-bottom: 1.5px solid rgb(190, 190, 190);
+ }
+
+
+header>.topnav>.topnavul{
+    margin-top: 1.3rem;
+    padding-left: 1.3rem;
+ }
+ header>.topnav>.topnavul>li{
+    
+    display: inline;
+    padding: 5px;
+    color: darkorange;
+ }
+ header>.topnav>.topnavul > li > b:nth-child(1){
+    color: rgb(98, 97, 97);
+ }
+ header > .topnav > .topnavul > li > b:nth-child(2){
+    color: black;
+ }
+ header > .topnav > .topnavul > li:nth-child(6){
+   color: darkorange;
+   padding-left: 20px;
+}
+ header> .topnav> .secondtopnavul{
+    padding-right: 1.3rem;
+    margin-top: 1.3rem;
+ }
+ header > .topnav > .secondtopnavul > li{
+    color: darkorange;
+    padding: 1rem;
+    display: inline;
+     
+ }
+ header > .topnav > .secondtopnavul > li:nth-child(2){
+    padding-bottom: 6px;
+    border-bottom: 2px solid darkorange;
+ }
+
+ /* ------------------------------------------- */
+
+
+
+
+ /* ------------------------------------------- */
+
+div.main{
+   margin-left: 13rem;
+   margin-right: 13rem;
+}
+div.main>div.upper{
+   border-bottom: 2px solid lightgrey;
+   display: flex;
+   overflow: hidden;
+   margin-top: 3rem;
+   
+   
+}
+div.main>div.upper>div.right{
+   flex: 1;
+   margin-right: 100px;
+   margin-bottom:80px;
+}
+h1.upperrighth1{
+   font-size: 40px;
+}
+div.right>p{
+   color: grey;
+}
+p{
+   color: lightgrey;
+}
+
+button{
+   background-color: darkorange;
+   color: white;
+   border: none;
+   border-radius: 5px;
+   padding: 15px 15px;
+   margin: 5px;
+}
+
+div.main>div.upper>div.left{
+   flex: 1;
+}
+div.bottom{
+   justify-content: space-between;
+   display: flex; 
+   margin-right: -11.5px;
+   margin-left: -11.5px;
+}
+div.bottom>div> p{
+   color: grey;
+}
+div.bottomleft{
+   border: 2px solid lightgrey;
+   overflow: hidden;
+   flex: 1; 
+   margin: 0 10px;
+}
+div.bottomleft>p,h3{
+   padding-left: 10px;
+   padding-right: 10px;
+   
+}
+div.bottommiddle{
+   border: 2px solid lightgrey;
+   overflow: hidden;
+   flex: 1;
+   margin: 0 10px;
+}
+div.bottommiddle>p,h3{
+   padding-left: 10px;
+   padding-right: 10px;
+}
+div.bottomright{
+   overflow: hidden;
+   border: 2px solid lightgrey;
+   flex: 1;
+   margin: 0 10px;
+   padding-bottom: 13px;
+}
+div.bottomright>p,h3{
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+ /* ------------------------------------------- */
+
+
+
+
+  /* ------------------------------------------- */
+
+div.midbutton{
+   align-items: center;
+   text-align: center;
+  }
+div.midbutton>button.midbutton{
+   margin-top: 15px;
+   margin-bottom: 15px;
+   padding: 10px 35px;
+  }
+  /* ------------------------------------------- */
+
+
+
+
+  /* ------------------------------------------- */
+footer{
+   background-color: rgb(73, 72, 72);
+   justify-content: space-between;
+   display: flex;
+}
+footer>.footerul{
+   margin-left: -30px;
+   flex: 1;
+   list-style: none;
+}
+
+.footerul>li>h3{
+
+   color: white;
+}
+.footerul>li:nth-child(2),li:nth-child(3),li:nth-child(4),li:nth-child(5){
+   margin-left: 20px;
+   padding: 5px;
+   color: darkorange;
+}
+
+
+
+
+  /* ------------------------------------------- */
+  
+div.bottomnav{
+   display: flex;
+   justify-content: space-between;
+}
+.bottomnavulone{
+   margin-left: 309px;
+   flex: 1;
+   
+}
+.bottomnavulone>li{
+   display: inline;
+   color: darkorange;
+   padding: 17px;
+}
+.bottomnavulone>li:nth-child(3){
+   padding-left: 1px;
+}
+.bottomnavultwo{
+   flex: 1;
+}
+.bottomnavultwo>li{
+   display: inline;
+   
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="topnav">
+            <ul class="topnavul">
+                <li>
+                    <b>Utah Mighty </b>
+                    <b>FIVE</b>
+                </li>
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+                <li>Four</li>
+                <li>Five</li>
+            </ul>
+            <ul class="secondtopnavul">
+                <li>Account</li>
+                <li>Login</li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+
+    <div class="parentcontainer">
+        <div class="main">
+            <div class="upper">
+                <div class="right">
+                    <h1 class="upperrighth1" >Close Your Eyes and Open Your Mind</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, optio eius magnam incidunt natus
+                        quod vero amet iusto ipsum consequuntur voluptatum enim similique eligendi, mollitia qui
+                        recusandae est necessitatibus quasi.</p>
+                    <button><a href="#"></a>Take a Tour</button>
+                    <button><a href="#"></a>Star a free trial</button>
+                </div>
+                <div class="left">
+                    <iframe width="580" height="327" src="https://www.youtube.com/embed/p70Aek1O_lg"
+                        title="Utah Mighty 5 National Parks Road Trip Guide (2024)." frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+
+            <h2>What are they?</h2>
+            <div class="bottom">
+                <div class="bottomleft">
+                    <img src="https://images.unsplash.com/photo-1514820654155-15e52b32874e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="270px" width="100%">
+                    <h3>Bryce Canyon National Park</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo numquam laborum aliquid distinctio
+                        commodi dolorum vero modi veritatis sit pariatur non a, obcaecati molestiae qui, deleniti
+                        provident? Debitis, consectetur cum.</p>
+                </div>
+                <div class="bottommiddle">
+                    <img src="https://images.unsplash.com/photo-1531512996069-514ed70f847e?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="270px" width="100%">
+                    <h3>Zion National Park</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi soluta sed error excepturi, a
+                        ducimus officiis harum atque exercitationem quidem beatae. Id blanditiis similique reiciendis
+                        nam odit. Fuga, cumque similique Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Numquam, velit fugiat. Natus ipsum fugiat molestias illum alias accusamus animi.</p>
+                </div>
+                <div class="bottomright">
+                    <img src="https://images.unsplash.com/photo-1615046727544-8fd9ac9836cf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="" height="270px" width="100%">
+                    <h3>Arcches National Park</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad amet aliquid consequatur quod
+                        temporibus ea fugiat error nam, eos cum. Necessitatibus suscipit et nobis. Obcaecati hic
+                        molestiae esse fugiat eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla,
+                        mollitia perferendis magnam velit numquam nam nobis deserunt sequi suscipit quae, quaerat nisi
+                        iure dolorem accusantium quas, deleniti consectetur labore minima? Lorem ipsum dolor sit amet
+                        consectetur adipisicing elit. Repudiandae error natus quo! Perferendis ut tenetur perspiciatis
+                        iure doloremque, veniam fuga suscipit reiciendis consequatur voluptatum commodi repellat, eaque
+                        quibusdam. Perferendis, dolorum!</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="midbutton">
+            <button class="midbutton"><a href="#"></a>Remaining two</button>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <ul class="footerul">
+            <li>
+                <h3>Offices</h3>
+            </li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+
+        <ul class="footerul">
+            <li>
+                <h3>Links</h3>
+            </li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+
+        <ul class="footerul">
+            <li>
+                <h3>Contact</h3>
+            </li>
+            <li>Twitter</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Pinterest</li>
+        </ul>
+
+        <ul class="footerul">
+            <li>
+                <h3>Location</h3>
+            </li>
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+            <li>Four</li>
+        </ul>
+    </footer>
+
+    <div class="bottomnav">
+        <ul class="bottomnavulone">
+            <li><a href="#"></a>Legal</li>
+            <li><a href="#"></a>Partner</li>
+            <li><a href="#"></a>Explore</li>
+        </ul>
+        <ul class="bottomnavultwo">
+            <li><b>&copy; All rights reserved</b></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <title>Project Starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="TODO: A starter project for ...">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        header h3 {
+
+            margin-left: 10px;
+        }
+
+        input {
+            border: 1px solid lightgrey;
+            background-color: lightgrey;
+            border-radius: 40px;
+            text-align: center;
+            padding-left: 120px;
+            padding-right: 120px;
+            margin-top: 12px;
+            margin-right: 10px;
+
+
+        }
+
+        .topnav>ul {
+            background-color: rgb(229, 229, 229);
+            text-align: center;
+            align-items: center;
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+
+        .topnav>ul>li {
+            padding: 1.5rem;
+            font-size: 1rem;
+            list-style: none;
+            color: darkorange;
+            display: inline;
+
+        }
+
+        div.main {
+
+            margin-left: 15%;
+            margin-right: 15%;
+            display: flex;
+
+        }
+
+        div.left {
+            margin-right: 20px;
+        }
+
+        div.left img {
+            height: 250px;
+            width: 250px;
+            border-radius: 1rem;
+        }
+
+        div.left h2 {
+            color: rgb(92, 92, 92);
+        }
+
+        button {
+            background-color: rgb(255, 123, 0);
+            color: white;
+            text-align: center;
+            padding: 10px 25px;
+            border: none;
+            border-radius: .3rem;
+        }
+
+        .left .top {
+            display: flex;
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 1rem;
+
+        }
+
+        .left .top .toprighttext {
+            margin-left: 10px;
+            margin-top: -20px;
+
+        }
+
+        .left .bottom {
+            display: flex;
+            padding-top: 1.5rem;
+        }
+
+        .left .bottom .bottomrighttext {
+            margin-left: 10px;
+            margin-top: -20px;
+
+        }
+
+        p.grey{
+            color: grey;
+        }
+
+
+        div.right {
+            background-color: lightgrey;
+            border-radius: 1rem;
+            height: 733px;
+            flex: 1;
+            margin-right: 1rem;
+        }
+
+        .right .content {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-top: 30px;
+        }
+
+        .right h3 {
+            color: rgb(92, 92, 92);
+        }
+
+        div.right .content img {
+
+            height: 220px;
+            width: 320px;
+
+        }
+
+        footer {
+            background-color: rgb(113, 113, 113);
+            margin-bottom: -17px;
+        }
+
+        footer>ul {
+            display: flex;
+            margin-left: -15px;
+            margin-right: 15px;
+        }
+
+        footer>ul>li {
+            list-style: none;
+            padding: 5px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+            font-size: 18px;
+        }
+
+        footer>ul>li:nth-child(3) {
+            flex: 1;
+        }
+
+        @media only screen and (max-width: 500px) {
+            .topnav {
+                display: none;
+            }
+
+            input {
+                display: none;
+            }
+
+            header {
+
+                border-bottom: 2px solid lightgrey;
+            }
+
+            button {
+                display: none;
+            }
+
+            .main .left .top .topleftimage img {
+                width: 100%;
+                height: auto;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+
+            .main .left .bottom .bottomleftimage img {
+                width: 100%;
+                height: auto;
+                margin-bottom: 5px;
+
+            }
+
+            .main .left .top .toprighttext {
+                margin-left: -2px;
+                margin-right: -2px;
+            }
+
+            .main .left .bottom .bottomrighttext {
+                margin-left: -2px;
+                margin-right: -2px;
+            }
+
+            .main .right {
+                display: none;
+            }
+
+            .main .left {
+
+                margin-left: -60px;
+                margin-right: -60px;
+                margin-top: 5px;
+            }
+
+            .main img {
+                width: 100px;
+            }
+
+            .main>.left>.top {
+                display: block;
+            }
+
+            .main>.left .bottom {
+                display: block;
+            }
+
+            footer>ul {
+                display: flex;
+                justify-content: center;
+            }
+
+            footer>ul li:nth-child(1) {
+                display: none;
+            }
+
+            footer>ul li:nth-child(2) {
+                display: none;
+            }
+
+            footer>ul li:nth-child(3) {
+                display: none;
+            }
+
+            footer {
+                margin-bottom: -16px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Umang Gupta</h3>
+        <input type="text" placeholder="Type to search">
+    </header>
+    <div class="topnav">
+        <ul>
+            <li>Home</li>
+            <li>Recent posts</li>
+            <li>Old posts</li>
+            <li>Contact us</li>
+            <li>About us</li>
+        </ul>
+    </div>
+
+
+    <div class="main">
+        <div class="left">
+            <div class="top">
+                <div class="topleftimage">
+                    <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bmF0dXJlfGVufDB8fDB8fHww"
+                        alt="nature">
+                </div>
+                <div class="toprighttext">
+                    <h2>First post with image</h2>
+                    <p class="grey">By Adam Smith, Jan 1 2021</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores, aperiam! Necessitatibus ex,
+                        dolorem quaerat ipsam aperiam excepturi deserunt repudiandae ipsa totam minima commodi nostrum
+                        obcaecati! Harum magni quae dolor soluta!</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <div class="bottomleftimage">
+                    <img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt=" nature">
+                </div>
+                <div class="bottomrighttext">
+                    <h2>Second post with image</h2>
+                    <p class="grey">By John Doe, Jan 1 2021</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae similique harum deserunt quam
+                        explicabo cupiditate reprehenderit voluptatum facilis rerum iure, eligendi, cum sequi
+                        doloremque.</p>
+                    <button>Read More</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="content">
+                <h3>Secondary content here</h3>
+                <img src="https://images.unsplash.com/photo-1431794062232-2a99a5431c6c?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="nature">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab eum, itaque doloremque placeat tempora
+                    voluptas maiores soluta magni laudantium corporis sapiente? Reiciendis facilis quis officiis
+                    provident
+                    ratione numquam ipsum esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas deserunt
+                    iusto.</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Youtube</li>
+            <li>&copy; All rights reserved</li>
+        </ul>
+    </footer>
+</body>
+
+</html>

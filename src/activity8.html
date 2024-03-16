@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        td{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>12 by 12 Multiplication Table</h1>");
+        document.write("<table border='1'>");
+        for (i = 1; i <= 12; i++) 
+        {
+            document.write("<tr>");
+            for (j = 1; j <= 12; j++) 
+            {
+                document.write("<td>" + i * j + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+    </script>
+</body>
+
+</html>
